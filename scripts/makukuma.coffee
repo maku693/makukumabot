@@ -9,7 +9,6 @@ module.exports = (robot) ->
       ":sparkles:(´◔౪◔):sparkles: < まくくまらよ〜"
     ]
 
-  robot.hear /(🍎|🍏|:(green-)?apple:)/, (msg) ->
   robot.hear /(🍎|🍏|:(green-)?apple:/, (msg) ->
     appleReplies = [
       "(´◔౪◔) < じーこんあいがと",
@@ -32,5 +31,5 @@ module.exports = (robot) ->
     ]
     msg.send msg.random replies
 
-  robot.hear /乾杯/, (msg) ->
+  robot.hear /乾杯|:beer(s)?:/, (msg) ->
     msg.send "(´◔౪◔):tropical_drink: < かんぱ〜い"
