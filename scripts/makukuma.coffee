@@ -2,7 +2,7 @@ module.exports = (robot) ->
   robot.hear /こんちわ/, (msg) ->
     msg.send "(´◔౪◔) < こんちわ"
 
-  robot.hear /まくくまくん/, (msg) ->
+  robot.hear /まくくま(くん)?/, (msg) ->
     msg.send msg.random [
       "(´◔౪◔) < よんだらか？",
       "(´◔౪◔) < なんら？",
@@ -26,7 +26,7 @@ module.exports = (robot) ->
 
   robot.hear /こちらです/, (msg) ->
     replies = [
-      "(´◔౪◔):hand::apple: < じーこんはこちらです",
+      "(´◔౪◔):apple: < じーこんはこちらです",
       "(´◔౪◔):apple: < こいはじーこん"
     ]
     msg.send msg.random replies
