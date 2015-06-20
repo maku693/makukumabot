@@ -23,3 +23,13 @@ module.exports = (robot) ->
     else
       appleReplies.push "(´◔౪◔):apple: < じーこんおいしいら"
     msg.send msg.random appleReplies
+
+  robot.hear /こちらです/, (msg) ->
+    replies = [
+      "(´◔౪◔):hand::apple: < じーこんはこちらです",
+      "(´◔౪◔):apple: < こいはじーこん"
+    ]
+    msg.send msg.random replies
+
+  robot.hear /乾杯/, (msg) ->
+    msg.send "(´◔౪◔):tropical_drink: < かんぱ〜い"
