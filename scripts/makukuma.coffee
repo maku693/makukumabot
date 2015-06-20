@@ -10,6 +10,7 @@ module.exports = (robot) ->
     ]
 
   robot.hear /(🍎|🍏|:(green-)?apple:)/, (msg) ->
+  robot.hear /(🍎|🍏|:(green-)?apple:/, (msg) ->
     appleReplies = [
       "(´◔౪◔) < じーこんあいがと",
       "(´◔౪◔) < あっじーこんいいらねえ"
