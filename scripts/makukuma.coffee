@@ -45,6 +45,7 @@ module.exports = (robot) ->
   robot.hear /(ʃ(\))?⁾⁾|よしよし|なでなで|かあいい|かわいい|けやい)/, (msg) ->
     replies = [
       ":sparkles:(´◔౪◔):sparkles:",
-      "(´◔౪◔):heartpulse:"
+      "(´◔౪◔):heartpulse:",
+      "(´◔౪◔):v:"
     ]
     msg.send msg.random replies
