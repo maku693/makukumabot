@@ -19,7 +19,7 @@ module.exports = (robot) ->
       appleReplies = appleReplies.concat [
         "(´◔౪◔) < あっみどりじーこん",
         "(´◔౪◔) < みどりじーこんしゅきらよ",
-        "(´◔౪◔):green-apple: < みどりじーこんおいしいらねえ"
+        "(´◔౪◔):green_apple: < みどりじーこんおいしいらねえ"
       ]
     else
       appleReplies.push "(´◔౪◔):apple: < じーこんおいしいら"
