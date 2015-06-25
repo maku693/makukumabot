@@ -9,10 +9,11 @@ module.exports = (robot) ->
       ":sparkles:(´◔౪◔):sparkles: < まくくまらよ〜"
     ]
 
-  robot.hear /:(green_)?apple:/, (msg) ->
+  robot.hear /(りんご|じーこん|:(green_)?apple:)/, (msg) ->
     appleReplies = [
       "(´◔౪◔) < じーこんあいがと",
-      "(´◔౪◔) < あっじーこんいいらねえ"
+      "(´◔౪◔) < あっじーこんいいらねえ",
+      "(´◔౪◔):sparkles: < あっじーこん"
     ]
     if (":green_apple:" in msg.match)
       appleReplies = appleReplies.concat [
