@@ -9,6 +9,9 @@ module.exports = (robot) ->
       ":sparkles:(´◔౪◔):sparkles: < まくくまらよ〜"
     ]
 
+  robot.hear /オールグリーン/, (msg) ->
+    msg.send "(´◔౪◔):green_apple: < こいはぐりーんじーこん"
+
   robot.hear /(りんご|じーこん|:(green_)?apple:)/, (msg) ->
     appleReplies = [
       "(´◔౪◔) < じーこんあいがと",
