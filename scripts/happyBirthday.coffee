@@ -3,7 +3,7 @@ module.exports = (robot) ->
     unless msg.envelope?.user?.name is "neo"
       return
     msg.send "(´◔౪◔) < とぅ〜ゆ〜"
-  robot.hear /Happy birthday dear (.*)/, (msg) ->
+  robot.hear /Happy birthday, dear (.*)/, (msg) ->
     unless msg.envelope?.user?.name is "neo"
       return
     you = msg.match[1]
