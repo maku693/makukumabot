@@ -6,7 +6,8 @@ module.exports = (robot) ->
   robot.hear /Happy birthday dear (.*)/, (msg) ->
     unless msg.envelope?.user?.name is "neo"
       return
-    msg.send "(´◔౪◔) < #{msg.match[1]}〜"
+    you = msg.match[1]
+    msg.send "(´◔౪◔) < #{you}〜"
   robot.hear /お誕生日おめでとう、(.*)。 :birthday:/, (msg) ->
     unless msg.envelope?.user?.name is "neo"
       return
